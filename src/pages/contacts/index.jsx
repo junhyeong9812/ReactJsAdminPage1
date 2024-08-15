@@ -2,7 +2,7 @@ import { Box } from '@mui/material';
 import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 import { tokens } from '../../theme';
 import { mockDataContacts } from '../../data/mockData';
-import Header from '../../data/components/Header';
+import Header from '../../components/Header';
 import { useTheme } from '@mui/material';
 
 const Contacts = () => {
@@ -83,7 +83,7 @@ const Contacts = () => {
             color: `${colors.greenAccent[200]} !important`,
           },
           '& .MuiDataGrid-toolbarContainer .MuiButton-text': {
-            color: `${colors.gray[100]} !important`,
+            color: `${colors.grey[100]} !important`,
           },
         }}
       >

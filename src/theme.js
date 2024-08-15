@@ -6,7 +6,7 @@ export const tokens = mode => ({
   ...(mode === 'dark'
     ? {
         //다크모드 색 구성
-        gray: {
+        grey: {
           100: '#e0e0e0',
           200: '#c2c2c2',
           300: '#a3a3a3',
@@ -65,7 +65,7 @@ export const tokens = mode => ({
       }
     : {
         //화이트 모드 색 구성
-        gray: {
+        grey: {
           100: '#141414',
           200: '#292929',
           300: '#3d3d3d',
@@ -140,9 +140,9 @@ export const themeSettings = mode => {
               main: colors.greenAccent[500],
             },
             neutral: {
-              dark: colors.gray[700],
-              main: colors.gray[500],
-              light: colors.gray[100],
+              dark: colors.grey[700],
+              main: colors.grey[500],
+              light: colors.grey[100],
             },
             background: {
               default: colors.primary[500],
@@ -157,9 +157,9 @@ export const themeSettings = mode => {
               main: colors.greenAccent[500],
             },
             neutral: {
-              dark: colors.gray[700],
-              main: colors.gray[500],
-              light: colors.gray[100],
+              dark: colors.grey[700],
+              main: colors.grey[500],
+              light: colors.grey[100],
             },
             background: {
               default: '#fcfcfc',
@@ -211,7 +211,7 @@ export const useMode = () => {
     () => ({
       toggleColorMode: () => setMode(prev => (prev === 'light' ? 'dark' : 'light')),
     }),
-    [],
+    []
   );
   const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
   //오브젝트를 여기서 가져온다.

@@ -12,7 +12,7 @@ import LockOpenOutlinedIcon from '@mui/icons-material/LockOpenOutlined';
 import SecurityOutlinedIcon from '@mui/icons-material/SecurityOutlined';
 // 각 접근 수준에 따른 아이콘을 임포트합니다.
 
-import Header from '../../data/components/Header';
+import Header from '../../components/Header';
 // 페이지 상단에 제목과 부제목을 표시하는 헤더 컴포넌트를 임포트합니다.
 
 import { mockDataTeam } from '../../data/mockData';
@@ -79,7 +79,7 @@ const User = () => {
             {access === 'manager' && <SecurityOutlinedIcon />}
             {access === 'user' && <LockOpenOutlinedIcon />}
             {/* 접근 수준에 따라 다른 아이콘을 표시합니다. */}
-            <Typography color={colors.gray[100]} sx={{ ml: '5px' }}>
+            <Typography color={colors.grey[100]} sx={{ ml: '5px' }}>
               {access}
             </Typography>
             {/* 접근 수준 텍스트를 표시합니다. */}
@@ -126,7 +126,7 @@ const User = () => {
             color: `${colors.greenAccent[200]} !important`,
           },
           '& .MuiSvgIcon-root': {
-             color: colors.greenAccent[300],
+            color: colors.greenAccent[300],
           },
         }}
       >

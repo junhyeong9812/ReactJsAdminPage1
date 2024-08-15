@@ -23,7 +23,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
   return (
     <MenuItem
       active={selected === title}
-      style={{ color: colors.gray[100] }}
+      style={{ color: colors.grey[100] }}
       onClick={() => setSelected(title)}
       icon={icon}
     >
@@ -69,16 +69,16 @@ const Sidebar = () => {
             icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
             style={{
               margin: '10px 0 20px 0',
-              color: colors.gray[100],
+              color: colors.grey[100],
             }}
           >
             {/* isCollapsed가 false일 경우 사이트명과 3단바를 사용자에게 보여준다. */}
             {!isCollapsed && (
               <Box display="flex" justifyContent="space-between" alignItems="center" ml="15px">
-                <Typography variant="h3" color={colors.gray[100]}>
+                <Typography variant="h3" color={colors.grey[100]}>
                   Kream
                 </Typography>
-                
+
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
                 </IconButton>
@@ -101,7 +101,7 @@ const Sidebar = () => {
               <Box textAlign="center">
                 <Typography
                   variant="h2"
-                  color={colors.gray[100]}
+                  color={colors.grey[100]}
                   fontWeight="bold"
                   sx={{ m: '10px 0 0 0' }}
                 >
@@ -122,7 +122,7 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-            <Typography variant="h6" color={colors.gray[300]} sx={{ m: '15px 0 5px 20px' }}>
+            <Typography variant="h6" color={colors.grey[300]} sx={{ m: '15px 0 5px 20px' }}>
               메인
             </Typography>
             <Item
@@ -149,12 +149,12 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-            <Typography variant="h6" color={colors.gray[300]} sx={{ m: '15px 0 5px 20px' }}>
+            <Typography variant="h6" color={colors.grey[300]} sx={{ m: '15px 0 5px 20px' }}>
               페이지
             </Typography>
             <Item
               title="Profile Form"
-              to="/profile"
+              to="/Form"
               icon={<PersonOutlinedIcon></PersonOutlinedIcon>}
               selected={selected}
               setSelected={setSelected}
@@ -173,7 +173,7 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-            <Typography variant="h6" color={colors.gray[300]} sx={{ m: '15px 0 5px 20px' }}>
+            <Typography variant="h6" color={colors.grey[300]} sx={{ m: '15px 0 5px 20px' }}>
               차트
             </Typography>
             <Item
